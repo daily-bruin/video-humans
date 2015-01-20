@@ -66,7 +66,7 @@
                         <li ng-repeat="people in people_list">
                             <a class="page-scroll" href="#{{people.id}}">
                                 <figure>
-                                     <img src="img/img1.jpg" alt="people1" class="img-rounded people_Img_sm">
+                                     <img ng-src="{{people.img}}" alt="people1" class="img-rounded people_Img_sm">
                                 {{people.name}}
                                 </figure>
                                
