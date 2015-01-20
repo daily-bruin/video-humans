@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -26,6 +20,18 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+    if ($(this).attr("id") != "dropMobile") {
+        $('.navbar-toggle:visible').click();  
+    };
 });
 
+
+ // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+$('.dropdown').on('show.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+ // ADD SLIDEUP ANIMATION TO DROPDOWN //
+$('.dropdown').on('hide.bs.dropdown', function(e){
+ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+ });

@@ -10,6 +10,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #7FDBFF;
+    overflow-x:hidden;
 }
 
 html {
@@ -252,6 +253,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    padding-bottom: 5%;
 }
 
 
@@ -388,6 +390,49 @@ video.fillWidth {
     color: #FFFFFF;
 }
 
-.adustPadding {
-    padding-top: 1.5%;
+/* for people section */
+.people_section {
+    text-align: center;
+}
+
+.people_Row {
+    height: 90%;
+    margin: 5% 0;
+    padding: 5% 0;
+    background-color: #3D9970;
+}
+
+.people_Img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.people_name {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.people_quote {
+    font-style: italic;
+}
+
+.people_Img_sm {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+    color: white;
+}
+
+.dropdown-menu>li>a:hover {
+    color: white;
+}
+.dropdown-menu>.active>a {
+background-color: rgba(255,255,255,.3);
 }

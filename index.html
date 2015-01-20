@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="HoWApp">
 
 <head>
 
@@ -15,13 +15,17 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
    
+   <!-- angular.js -->
+    <script src="js/angular.js"></script>
+    <script src="js/HoW.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-sanitize.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +36,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="HoWCtrl">
 
         <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -54,7 +58,21 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">People</a>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                     <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="dropMobile">People <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li ng-repeat="people in people_list">
+                            <a class="page-scroll" href="#{{people.id}}">
+                                <figure>
+                                     <img src="img/img1.jpg" alt="people1" class="img-rounded people_Img_sm">
+                                {{people.name}}
+                                </figure>
+                               
+                            </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -68,12 +86,11 @@
 
     <!-- Intro Header -->
     <div class="header-unit">
-        <div id="video-container">
+         <div id="video-container">
             <video autoplay loop muted poster="../img/intro-bg.jpg" class="fillWidth" id="bgvid">
                 <source src="videos/ucla.mp4" type="video/mp4"/>
             </video>
         </div><!-- end video-container -->
-
         <header class="intro">
             <div class="intro-body">
                 <div class="container">
@@ -99,27 +116,39 @@
                 <h2>People</h2>
                 <p>Lorem ipsum dolor sit amet, aperiam viderer nec ea, esse graece dolorem ea vis. Vel te viderer urbanitas assentior. Soluta constituto vel ad, ludus efficiendi ad pri. Exerci epicurei legendos his ut, sed ullum libris ei, ad his vero habeo.</p>
                 <p>At nonumy percipit prodesset vis, in platonem eloquentiam sea, tempor contentiones eos cu. Mutat blandit ea usu, no cotidieque accommodare ius. Reque antiopam has cu. Cum quod altera te, unum urbanitas no sed, no illum atqui necessitatibus sit. Consul mucius conclusionemque at duo.</p>
-                <p>Mel id dico unum aeque. Usu ad nisl natum choro. Suas civibus laboramus pri ad. In nam gloriatur percipitur, te errem melius vocent vel, homero persius aliquando ei ius.</p>
             </div>
         </div>
     </section>
 
+    
+
+    <!--People Section-->
+    <section>
+        <div class="row panel col-large-height people_Row" ng-repeat="people in people_list" id = "{{people.id}}">
+            <div class="col-lg-7" >
+                <iframe width="100%" height="480" ng-src="{{ trustSrc(people.video) }}" frameborder="0" allowfullscreen ></iframe>
+            </div>
+            <div class="col-lg-5 people_section" >
+                <figure >
+                    <img ng-src="{{people.img}}" alt="img1" width="50%" height="50%">
+                </figure>
+                <p class="people_name">{{people.name}}</p>
+                <p class="people_quote">
+                    <i class="fa fa-quote-left"></i>
+                    {{people.quote}}
+                    <i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
    <footer>
-        <div id="contact">
-          <div class="copy">
-              <div class="row">
-                  <div class="large-12 columns">
-                      <div class="large-4 pull-1 columns text-center adustPadding">
-                          <p class="setContact">&copy; Copyright 
-                            <a href="mailto:tsengliwei@gmail.com" class="setContact">Staff</a>.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="container text-center">
+            <p>Copyright &copy; 
+                <a href="mailto:tsengliwei@gmail.com" class="setContact">Staff</a>
+            </p>
+        </div>
     </footer>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -130,11 +159,9 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
+   
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/specialEffect.js"></script>
 
 </body>
 
