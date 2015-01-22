@@ -32,6 +32,7 @@ h6 {
 }
 
 p {
+    font-family: "Georgia"
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -391,6 +392,10 @@ video.fillWidth {
 }
 
 /* for people section */
+.panel {
+    background-color: #7FDBFF;
+    border-bottom: 0;
+}
 .people_section {
     text-align: center;
 }
@@ -399,7 +404,7 @@ video.fillWidth {
     height: 90%;
     margin: 5% 0;
     padding: 5% 0;
-    background-color: #3D9970;
+    
 }
 
 .people_Img {
@@ -408,12 +413,16 @@ video.fillWidth {
 }
 
 .people_name {
-    font-size: 0.9em;
-    font-weight: bold;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-weight: 700;
+    letter-spacing: 1px;  
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 .people_quote {
     font-style: italic;
+    padding: 25% 0 25% 0;
 }
 
 .people_Img_sm {
