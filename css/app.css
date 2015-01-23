@@ -375,7 +375,7 @@ body {
   border-right:none;
   border-left: none;
   position: relative;
-  padding: 20px;
+ padding: 0x; 
 }
 #video-container {
     position: absolute;
