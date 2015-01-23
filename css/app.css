@@ -141,7 +141,9 @@ a:focus {
     text-align: center;
     color: #fff; 
     letter-spacing: 2px;
-    background: url(../img/header-img.jpg) no-repeat bottom center scroll;
+    /*
+    background: url(../img/header-img.png) no-repeat bottom center scroll;
+    */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
