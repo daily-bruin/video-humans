@@ -76,9 +76,6 @@
                         </li>
                       </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -89,7 +86,7 @@
     <!-- Intro Header -->
     <div class="header-unit">
          <div id="video-container">
-            <video autoplay loop muted poster="../img/intro-bg.jpg" class="fillWidth" id="bgvid">
+            <video autoplay loop muted poster="img/header-img.jpg" class="fillWidth" id="bgvid">
                 <source src="videos/header-vid-low.mp4" type="video/mp4"/>
             </video>
         </div><!-- end video-container -->
@@ -126,7 +123,7 @@
 
     <!--People Section-->
     <section>
-        <div class="row col-large-height people_Row" ng-repeat="people in people_list" id = "{{people.id}}">
+        <div class="row panel col-large-height people_Row" ng-repeat="people in people_list" id = "{{people.id}}">
             <div class="col-md-8" >
                 <iframe width="100%" height="480" ng-src="{{ trustSrc(people.video) }}" frameborder="0" allowfullscreen ></iframe>
             </div>
@@ -145,7 +142,9 @@
    <footer>
         <div class="container text-center">
             <p>Copyright &copy; 
-                <a href="mailto:tsengliwei@gmail.com" class="setContact">Staff</a>
+                <a href="mailto:tsengliwei@gmail.com" class="setContact">Li-Wei Tseng,</a>
+                <a href="mailto:vinsonlaila@gmail.com" class="setContact">Laila Vinson,</a>
+                <a href="mailto:szou@gmail.com" class="setContact">Simon Zou</a>
             </p>
         </div>
     </footer>

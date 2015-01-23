@@ -140,8 +140,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;*/
+    background: url(../img/header-img.jpg) no-repeat bottom center scroll;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -394,7 +394,9 @@ video.fillWidth {
 /* for people section */
 .panel {
     background-color: #7FDBFF;
-    border-bottom: 0;
+    border-bottom: 2px solid #ccf1ff;
+
+
 }
 .people_section {
     text-align: center;
@@ -404,6 +406,7 @@ video.fillWidth {
     height: 90%;
     margin: 5% 0;
     padding: 5% 0;
+
     
 }
 
