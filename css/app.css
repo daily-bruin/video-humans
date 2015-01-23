@@ -187,6 +187,10 @@ a:focus {
     }
 }
 
+.intro-text {
+    font-style: italic;
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;
