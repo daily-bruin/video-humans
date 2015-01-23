@@ -9,37 +9,18 @@
             }
         });
 
-
     var people_data = [{
-        name: "Will Smith",
-        quote: "Throughout life people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too.",
+        name: "Christian Green",
+        quote: "Let go of the fear. Let go of the mistrust and be able to allow people to sow good seeds and sow good thoughts.",
         id: 1,
-        video: "https://www.youtube.com/embed/Z2c9csnQMDY",
-        img: "img/img1.jpg"
+        video: "https://www.youtube.com/embed/B_15_oU7yvs",
+        img: "img/christian-green.jpg"
     }, {
-        name: "Dwight Eisenhower",
-        quote: "A people that values its privileges above its principles soon loses both.",
+        name: "Blanca Cortes",
+        quote: "I am a volunteer for the Make-A-Wish Foundation. My official title is a 'wish granter.'",
         id: 2,
-        video: "https://www.youtube.com/embed/Z2c9csnQMDY",
-        img: "img/img1.jpg"
-    }, {
-        name: "Isaac Asimov",
-        quote: "People who think they know everything are a great annoyance to those of us who do.",
-        id: 3,
-        video: "https://www.youtube.com/embed/Z2c9csnQMDY",
-        img: "img/img1.jpg"
-    }, {
-        name: "Maya Angelou",
-        quote: "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-        id: 4,
-        video: "https://www.youtube.com/embed/Z2c9csnQMDY",
-        img: "img/img1.jpg"
-    }, {
-        name: "UCLA",
-        quote: "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-        id: 5,
-        video: "https://www.youtube.com/embed/Z2c9csnQMDY",
-        img: "img/img1.jpg"
-    }];
+        video: "https://www.youtube.com/embed/T8QctHh6UPk",
+        img: "img/blanca-cortes.jpg"
+    }]; 
 
 })();

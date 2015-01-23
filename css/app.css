@@ -139,7 +139,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: #fff; 
+    letter-spacing: 2px;
     background: url(../img/header-img.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -157,6 +158,14 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+}
+
+.reel-life
+{
+    font-style: "calibri light", verdana, sans-serif; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #a8a8a8
 }
 
 .intro .intro-body .intro-text {
