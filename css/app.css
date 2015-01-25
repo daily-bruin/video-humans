@@ -409,13 +409,12 @@ video.fillWidth {
 }
 
 /* for people section */
+
 .panel {
-    background-color: #074255;
+    background-color: #68A9E8;
     border-bottom: 2px solid #ccf1ff;
-    border-top: 2px solid #ccf1ff;
-
-
 }
+
 .people_section {
     text-align: center;
 }
@@ -424,8 +423,7 @@ video.fillWidth {
     height: 90%;
     margin: 5% 0;
     padding: 5% 0;
-
-    
+   
 }
 
 .people_Img {
