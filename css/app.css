@@ -1,4 +1,4 @@
-/*!
+ /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #7FDBFF;
+    background-color: #68A9E8;
     overflow-x:hidden;
 }
 
@@ -100,6 +100,7 @@ a:focus {
 }
 
 .navbar-custom .nav li a {
+
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -268,6 +269,7 @@ a:focus {
 .content-section {
     padding-top: 100px;
     padding-bottom: 5%;
+    background-color: #68A9E8;
 }
 
 
@@ -399,18 +401,20 @@ video.fillWidth {
     width: 100%;
 }
 
+
 /* for footer */
 .setContact {
     color: #FFFFFF;
+    font-size: .8em;
 }
 
 /* for people section */
+
 .panel {
-    background-color: #7FDBFF;
+    background-color: #68A9E8;
     border-bottom: 2px solid #ccf1ff;
-
-
 }
+
 .people_section {
     text-align: center;
 }
@@ -419,8 +423,7 @@ video.fillWidth {
     height: 90%;
     margin: 5% 0;
     padding: 5% 0;
-
-    
+   
 }
 
 .people_Img {
