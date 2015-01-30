@@ -21,6 +21,12 @@
         id: 2,
         video: "https://www.youtube.com/embed/T8QctHh6UPk",
         img: "img/blanca-cortes.jpg"
+    }, {
+        name: "Jean Kevin Aguirre",
+        quote: "Well I started dressing like this a couple of months after my great-grandfather passed away.",
+        id: 3,
+        video: "https://www.youtube.com/embed/twmdGglKV9w",
+        img: "img/jean-kevin.jpg"
     }]; 
 
 })();
