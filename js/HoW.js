@@ -15,7 +15,7 @@
         quote: "Well I started dressing like this a couple of months after my great-grandfather passed away.",
         id: 1,
         video: "https://www.youtube.com/embed/twmdGglKV9w",
-        img: "img/jean-kevin.jpg"
+        img: "img/jean-aguirres.jpg"
     },
     {
         name: "Christian Green",
