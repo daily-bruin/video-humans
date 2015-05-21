@@ -5,6 +5,8 @@ var url = "https://spreadsheets.google.com/feeds/list/1ltIDoDROZ_b0x8qMAmKTQBvE_
 
     ReelApp.controller("ReelCtrl", ["$scope", "$sce", "$http", function ($scope, $sce, $http) {
       $scope.results = [];
+      $scope.videos = [];
+
         /* allow videos */
         $scope.trustSrc=function(src){
             return $sce.trustAsResourceUrl(src);
@@ -14,17 +16,18 @@ var url = "https://spreadsheets.google.com/feeds/list/1ltIDoDROZ_b0x8qMAmKTQBvE_
             	angular.forEach(data, function(value, index){
             		angular.forEach(value.entry, function(people, index){
             			$scope.results.push(people);
-            			console.log(people);
+            			//console.log(people);
+                        angular.forEach(people.gsx$video, function(value, $t) {
+                            var video_id = value.split('/embed/')[1];
+                            $scope.videos.push(video_id);
+                            console.log('this is the video_id!! ' + video_id);
+                        });
             		});
             	});
             }).error(function(error){
         });
-    }
-                     
-                            
-                            
-                
-              
+
+    }                    
 ]);
                           
 
